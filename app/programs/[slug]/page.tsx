@@ -8,6 +8,7 @@ import { Icon, IconBox } from "@/components/icon";
 import { PageHero } from "@/components/page-hero";
 import { RelatedLinks } from "@/components/related-links";
 import { SectionHead } from "@/components/section-head";
+import { TickList } from "@/components/tick-list";
 import { getProgram, programs, seriesInfo } from "@/content/programs";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -62,14 +63,7 @@ export default async function ProgramPage({ params }: Props) {
             </div>
             <div className="reveal">
               <h3>What you get</h3>
-              <ul className="ticks">
-                {program.gets.map((g) => (
-                  <li key={g}>
-                    <Icon name="check" />
-                    <span>{g}</span>
-                  </li>
-                ))}
-              </ul>
+              <TickList items={program.gets} />
             </div>
           </div>
         </div>
