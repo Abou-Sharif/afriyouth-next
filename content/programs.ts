@@ -59,7 +59,7 @@ export const programs: Program[] = [
       },
     ],
     stepsLink: {
-      href: "approach.html",
+      href: "/approach/",
       label: "See all ten steps",
     },
     track: [
@@ -95,7 +95,7 @@ export const programs: Program[] = [
       },
     ],
     lab: {
-      href: "services.html#research",
+      href: "/services/#research",
       label: "Research and Evidence Lab",
     },
   },
@@ -167,7 +167,7 @@ export const programs: Program[] = [
       },
     ],
     lab: {
-      href: "services.html#innovation",
+      href: "/services/#innovation",
       label: "Innovation and Entrepreneurship Lab",
     },
   },
@@ -239,7 +239,7 @@ export const programs: Program[] = [
       },
     ],
     lab: {
-      href: "services.html#capacity",
+      href: "/services/#capacity",
       label: "Leadership and Skills Lab",
     },
   },
@@ -311,7 +311,7 @@ export const programs: Program[] = [
       },
     ],
     lab: {
-      href: "services.html#capacity",
+      href: "/services/#capacity",
       label: "Leadership and Skills Lab",
     },
   },
@@ -383,7 +383,7 @@ export const programs: Program[] = [
       },
     ],
     lab: {
-      href: "services.html#capacity",
+      href: "/services/#capacity",
       label: "Leadership and Skills Lab",
     },
   },
