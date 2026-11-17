@@ -34,12 +34,12 @@ export function Programs() {
             <span className="tag">Flagship program</span>
             <span className="j-t">Evidence-to-Impact Accelerator</span>
             <span className="muted">
-              Instead of separate research, incubation and training, we combine them. Ten stages take a
-              community problem to a tested, measured solution that can grow.
+              Instead of separate research, incubation and training, we combine them. Ten stages
+              take a community problem to a tested, measured solution that can grow.
             </span>
             <span className="muted j-small">
-              <strong>For:</strong> young innovators with an idea. <strong>Dates and eligibility:</strong>{" "}
-              to be confirmed.
+              <strong>For:</strong> young innovators with an idea.{" "}
+              <strong>Dates and eligibility:</strong> to be confirmed.
             </span>
             <span className="link j-push">
               View program

@@ -48,7 +48,12 @@ export function Header() {
       const active = document.activeElement;
       const keyboard =
         !!active && !!header.current?.contains(active) && active.matches(":focus-visible");
-      if (!small.matches || document.documentElement.classList.contains("menu-open") || y < 120 || keyboard) {
+      if (
+        !small.matches ||
+        document.documentElement.classList.contains("menu-open") ||
+        y < 120 ||
+        keyboard
+      ) {
         setHidden(false);
       } else if (dy > 6) setHidden(true);
       else if (dy < -6) setHidden(false);
@@ -106,7 +111,13 @@ export function Header() {
         <div className="wrap bar">
           <Link className="brand" href="/" aria-label="AfriYouth Innovation Labs, home">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img className="b-full" src="/logo/logo-color.svg" alt="AfriYouth Innovation Labs" width={209} height={108} />
+            <img
+              className="b-full"
+              src="/logo/logo-color.svg"
+              alt="AfriYouth Innovation Labs"
+              width={209}
+              height={108}
+            />
             <span className="b-mini" aria-hidden="true">
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img src="/logo/icon-color.svg" alt="" width={30} height={48} />

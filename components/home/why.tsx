@@ -6,8 +6,8 @@ export function Why() {
     <section id="why" className="j-why">
       <div className="wrap j-why-grid">
         <p className="j-statement reveal">
-          By 2030, Africa will have the largest workforce in the world. Young people need the ability to
-          solve African problems, and that is what we are here to build.
+          By 2030, Africa will have the largest workforce in the world. Young people need the
+          ability to solve African problems, and that is what we are here to build.
         </p>
         <div className="reveal">
           <p className="j-lab">Most organizations do one part of the job</p>
@@ -22,8 +22,8 @@ export function Why() {
           <div className="j-us">
             <b>AfriYouth</b>
             <span>
-              connects all four, from training to incubation, research, policy and consulting, in one
-              journey
+              connects all four, from training to incubation, research, policy and consulting, in
+              one journey
             </span>
           </div>
           <p className="j-after">

@@ -25,7 +25,9 @@ export function Publications() {
             </Link>
           ))}
         </div>
-        <p className="j-note">Reports and results will be listed here as AfriYouth publishes them.</p>
+        <p className="j-note">
+          Reports and results will be listed here as AfriYouth publishes them.
+        </p>
       </div>
     </section>
   );

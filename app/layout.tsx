@@ -23,8 +23,7 @@ const figtree = Figtree({
 
 export const metadata: Metadata = {
   title: "AfriYouth Innovation Labs",
-  description:
-    "Evidence, innovation and entrepreneurship programs for young people across Africa.",
+  description: "Evidence, innovation and entrepreneurship programs for young people across Africa.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

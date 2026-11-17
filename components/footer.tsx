@@ -7,7 +7,12 @@ export function Footer() {
       <div className="wrap foot-grid">
         <div className="foot-brand">
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src="/logo/logo-white.svg" alt="AfriYouth Innovation Labs" width={214} height={112} />
+          <img
+            src="/logo/logo-white.svg"
+            alt="AfriYouth Innovation Labs"
+            width={214}
+            height={112}
+          />
           <p>
             Email to be confirmed
             <br />
@@ -28,7 +33,9 @@ export function Footer() {
         ))}
       </div>
       <div className="wrap legal">
-        <span>&copy; 2026 AfriYouth Innovation Labs. Fueling Innovators for Sustainable Development.</span>
+        <span>
+          &copy; 2026 AfriYouth Innovation Labs. Fueling Innovators for Sustainable Development.
+        </span>
         <span>Privacy and Terms to be added.</span>
       </div>
     </footer>

@@ -89,7 +89,8 @@ export const orgServices = [
     id: "funding",
     title: "Funding and investment readiness",
     text: "Great solutions still need resources. We help you find and win them.",
-    detail: "Grant strategy and proposals, pitch decks, investor readiness, partnership development.",
+    detail:
+      "Grant strategy and proposals, pitch decks, investor readiness, partnership development.",
     product: "",
   },
   {
@@ -103,8 +104,14 @@ export const orgServices = [
 
 export const publications = [
   { title: "Evidence Reports", text: "Clear, sourced findings on youth, jobs and development." },
-  { title: "Policy Solutions Series", text: "Evidence turned into practical policy options and reform." },
-  { title: "Africa 2050 Futures Series", text: "Short studies on where Africa is heading and how to prepare." },
+  {
+    title: "Policy Solutions Series",
+    text: "Evidence turned into practical policy options and reform.",
+  },
+  {
+    title: "Africa 2050 Futures Series",
+    text: "Short studies on where Africa is heading and how to prepare.",
+  },
 ];
 
 export const mission =
@@ -114,7 +121,19 @@ export const vision =
   "To build an Africa where empowered young people use evidence, innovation and entrepreneurship to solve complex challenges, shape policies and drive inclusive and sustainable socio-economic transformation by 2050.";
 
 export const nextSteps = [
-  { href: "/programs/", title: "Join a program", text: "Find the program that fits you and ask how to take part." },
-  { href: "/contact/?topic=work#partner", title: "Get help for your organization", text: "Tell us about your research, policy, impact or funding needs." },
-  { href: "/contact/?topic=partner#partner", title: "Partner with us", text: "Explore working together on research, policy, innovation or skills." },
+  {
+    href: "/programs/",
+    title: "Join a program",
+    text: "Find the program that fits you and ask how to take part.",
+  },
+  {
+    href: "/contact/?topic=work#partner",
+    title: "Get help for your organization",
+    text: "Tell us about your research, policy, impact or funding needs.",
+  },
+  {
+    href: "/contact/?topic=partner#partner",
+    title: "Partner with us",
+    text: "Explore working together on research, policy, innovation or skills.",
+  },
 ];

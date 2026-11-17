@@ -38,8 +38,8 @@ export function HowWeWork() {
         <div className="j-rule" />
         <div className="j-foot">
           <p className="muted">
-            All along the way, our employability programs and the Professional Development Academy help
-            young people get job-ready and grow as leaders.
+            All along the way, our employability programs and the Professional Development Academy
+            help young people get job-ready and grow as leaders.
           </p>
           <ArrowLink href="/approach/">See the ten-step journey</ArrowLink>
         </div>
