@@ -305,7 +305,7 @@ h3{font-size:1.2rem;line-height:1.3}
 .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px;padding-bottom:36px}
 .foot-brand img{height:96px;width:auto;margin-bottom:16px}
 .foot-brand p{font-size:1rem;line-height:1.7}
-.footer h4{font-family:var(--head);font-size:1rem;font-weight:600;color:#fff;margin-bottom:8px}
+.footer h3{font-family:var(--head);font-size:1rem;line-height:inherit;letter-spacing:normal;font-weight:600;color:#fff;margin-bottom:8px}
 .footer nav a{display:block;text-decoration:none;font-size:1rem;padding:5px 0;color:#fff}
 .footer nav a:hover{text-decoration:underline;text-underline-offset:3px}
 .footer :focus-visible{outline-color:#fff}
