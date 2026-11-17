@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Icon } from "@/components/icon";
+import { ButtonLink } from "@/components/button-link";
 import { nextSteps } from "@/content/home";
 
 export function NextSteps() {
@@ -18,10 +18,9 @@ export function NextSteps() {
           ))}
         </ul>
         <div className="j-cta-b">
-          <Link className="btn btn-light" href="/contact/">
+          <ButtonLink href="/contact/" variant="light" icon="arrow">
             Get in touch
-            <Icon name="arrow" />
-          </Link>
+          </ButtonLink>
           <span>Email and WhatsApp details to be confirmed.</span>
         </div>
       </div>

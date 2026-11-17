@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { ButtonLink } from "@/components/button-link";
 import { Icon } from "@/components/icon";
 
 export function Hero() {
@@ -12,13 +13,12 @@ export function Hero() {
             We help young people and organizations find out what works, build it, and make it last.
           </p>
           <div className="hero-cta">
-            <Link className="btn btn-solid" href="/programs/">
+            <ButtonLink href="/programs/" icon="arrow">
               Explore programs
-              <Icon name="arrow" />
-            </Link>
-            <Link className="btn btn-line" href="/contact/?topic=partner#partner">
+            </ButtonLink>
+            <ButtonLink href="/contact/?topic=partner#partner" variant="line">
               Partner with us
-            </Link>
+            </ButtonLink>
           </div>
           <p className="hero-aud">
             <span>Jump to</span>

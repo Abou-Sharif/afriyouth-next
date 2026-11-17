@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { ArrowLink } from "@/components/arrow-link";
+import { ButtonLink } from "@/components/button-link";
 import { Icon } from "@/components/icon";
 import { SectionHead } from "@/components/section-head";
 import { orgServices } from "@/content/home";
@@ -39,10 +40,9 @@ export function Services() {
               innovation and young people&apos;s skills. See where we could work together.
             </p>
           </div>
-          <Link className="btn btn-solid" href="/contact/?topic=partner#partner">
+          <ButtonLink href="/contact/?topic=partner#partner" icon="arrow">
             Partner with us
-            <Icon name="arrow" />
-          </Link>
+          </ButtonLink>
         </div>
       </div>
     </section>

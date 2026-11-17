@@ -22,7 +22,11 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
-  title: "AfriYouth Innovation Labs",
+  title: {
+    default: "AfriYouth Innovation Labs",
+    template: "%s | AfriYouth Innovation Labs",
+  },
+  icons: { icon: "/logo/favicon.svg" },
   description: "Evidence, innovation and entrepreneurship programs for young people across Africa.",
 };
 
