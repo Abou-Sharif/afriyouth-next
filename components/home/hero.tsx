@@ -35,6 +35,7 @@ export function Hero() {
               height={1600}
               alt="A young woman celebrating with a Start Up sign in a shared workspace"
               priority
+              fetchPriority="high"
             />
             <figcaption>
               <Icon name="users" />

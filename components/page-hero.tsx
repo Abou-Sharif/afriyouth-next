@@ -49,6 +49,7 @@ export function PageHero({ crumbs, title, lead, jumps, image }: PageHeroProps) {
                 height={image.height}
                 alt={image.alt}
                 priority
+                fetchPriority="high"
               />
             </figure>
           )}
