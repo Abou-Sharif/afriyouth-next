@@ -1,5 +1,10 @@
 import type { Metadata } from "next";
 import { Figtree, Poppins } from "next/font/google";
+import { BackToTop } from "@/components/back-to-top";
+import { Footer } from "@/components/footer";
+import { Header } from "@/components/header";
+import { IconSprite } from "@/components/icon";
+import { ScrollReveal } from "@/components/reveal";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -25,7 +30,17 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${poppins.variable} ${figtree.variable}`}>
-      <body>{children}</body>
+      <body>
+        <IconSprite />
+        <a className="skip" href="#main">
+          Skip to content
+        </a>
+        <Header />
+        <main id="main">{children}</main>
+        <Footer />
+        <BackToTop />
+        <ScrollReveal />
+      </body>
     </html>
   );
 }
