@@ -40,7 +40,9 @@ export function Header() {
   useEffect(() => {
     const small = window.matchMedia(SMALL);
     let ticking = false;
-    lastY.current = window.scrollY;
+    // Start from the top like the plain-HTML build: a hash jump or restored scroll that
+    // happened before hydration then counts as a downward scroll and hides the bar.
+    lastY.current = 0;
     const check = () => {
       ticking = false;
       const y = Math.max(0, window.scrollY);
@@ -66,6 +68,7 @@ export function Header() {
       }
     };
     window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll();
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
