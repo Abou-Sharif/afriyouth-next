@@ -4,7 +4,7 @@ export const mission =
   "To empower Africa's youth to generate evidence, shape policy and develop innovative solutions to pressing socio-economic challenges, through research, human-centered design and entrepreneurship.";
 
 export const vision =
-  "To build an Africa where empowered young people use evidence, innovation and entrepreneurship to solve complex challenges, shape policies and drive inclusive and sustainable socio-economic transformation by 2050.";
+  "An Africa where empowered young people use evidence, innovation and entrepreneurship to address complex challenges and drive inclusive, sustainable socio-economic transformation.";
 
 export const values: Feature[] = [
   { icon: "bulb", title: "Innovation", text: "New ideas, tested with the people they are for." },

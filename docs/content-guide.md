@@ -27,7 +27,7 @@ To find where a sentence lives, search the repo for a few words of it.
 
 - **Change a heading or paragraph.** Find it in the page file or content file above and edit the string.
 - **Add or remove a card or list item.** Add or remove an object in the matching array. Copy a neighbor so every field is present.
-- **Change the contact details.** Edit `contactInfo` in `content/contact.ts`. The email address and location are placeholders today.
+- **Change the contact details.** Edit `contact` in `content/site.ts`. The footer, the contact page and the home call to action all read from it.
 - **Change the topics of the contact form.** Edit `topicOptions`. The links such as `/contact/?topic=program` use the keys of `topicParams`, which point at an option by position, so keep both in step.
 - **Change the menu or footer.** Edit `mainNav` or `footerColumns` in `content/site.ts`. The Programs menu follows `programs` automatically.
 - **Add a program.** See `docs/add-a-program.md`.
@@ -59,4 +59,4 @@ Forms are defined as field lists (`contactFields` in `content/contact.ts`, `aler
 
 ## Placeholders still in the content
 
-Sample copy where no text was supplied, placeholder contact details, forms that do not send, Figtree standing in for Gilroy, six photos only, and "Dates and eligibility: to be confirmed". See the README.
+Sample copy where no text was supplied, no street address or privacy page yet, forms that do not send, Figtree standing in for Gilroy, six photos only, and "Dates and eligibility: to be confirmed". See the README.

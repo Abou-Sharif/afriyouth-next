@@ -1,8 +1,9 @@
 import type { FieldConfig } from "@/components/field";
+import { contact } from "./site";
 
 export const contactInfo = [
-  { icon: "mail", title: "Email", text: "Address to be added by the organization" },
-  { icon: "pin", title: "Where we are", text: "Location to be added by the organization" },
+  { icon: "mail", title: "Email", text: contact.email },
+  { icon: "phone", title: "Phone", text: contact.phones.join(" or ") },
   { icon: "clock", title: "Reply time", text: "We aim to reply within a few working days." },
 ];
 

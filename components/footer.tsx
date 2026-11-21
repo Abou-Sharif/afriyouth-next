@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { footerColumns } from "@/content/site";
+import { contact, footerColumns } from "@/content/site";
 
 export function Footer() {
   return (
@@ -14,11 +14,9 @@ export function Footer() {
             height={112}
           />
           <p>
-            Email to be confirmed
+            {contact.email}
             <br />
-            Phone or WhatsApp to be confirmed
-            <br />
-            Address to be confirmed
+            {contact.phones.join(" or ")}
           </p>
         </div>
         {footerColumns.map((col) => (
@@ -36,7 +34,6 @@ export function Footer() {
         <span>
           &copy; 2026 AfriYouth Innovation Labs. Fueling Innovators for Sustainable Development.
         </span>
-        <span>Privacy and Terms to be added.</span>
       </div>
     </footer>
   );

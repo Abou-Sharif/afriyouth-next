@@ -1,5 +1,11 @@
 import { programs } from "./programs";
 
+/** Organization contact details, as shown in the footer, on the contact page and in the home call to action. */
+export const contact = {
+  email: "competence@jobra.africa",
+  phones: ["+250783618941", "+250790147305"],
+};
+
 export const mainNav = [
   { href: "/services/", label: "Services" },
   { href: "/approach/", label: "Our approach" },

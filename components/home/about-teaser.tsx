@@ -1,5 +1,5 @@
 import { ArrowLink } from "@/components/arrow-link";
-import { mission, vision } from "@/content/home";
+import { mission, vision } from "@/content/about";
 
 export function AboutTeaser() {
   return (

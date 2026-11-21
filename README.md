@@ -62,7 +62,7 @@ The five program pages are generated from `content/programs.ts`.
 These are known and intentional. Replace them before launch.
 
 - **Sample copy.** Wherever AfriYouth supplied no text, the copy is sample text. Program formats say so on the page ("The format is an example for the sample").
-- **Contact details.** The email address and location on `/contact/` are placeholders ("Address to be added by the organization").
+- **Contact details.** The email address and two phone numbers come from the Figma design and live in `contact` in `content/site.ts`. There is no street address, WhatsApp number or privacy and terms page yet.
 - **Forms do not send anything.** The contact form, the alert sign-up and the other forms validate in the browser and show a thank-you message, then reset. No data leaves the page (`components/form.tsx`). Connect a form service or an API before launch.
 - **Fonts.** Figtree stands in for Gilroy until the brand font files are supplied.
 - **Photos.** There are only six (`public/img/`), reused across pages.

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/button-link";
 import { nextSteps } from "@/content/home";
+import { contact } from "@/content/site";
 
 export function NextSteps() {
   return (
@@ -21,7 +22,9 @@ export function NextSteps() {
           <ButtonLink href="/contact/" variant="light" icon="arrow">
             Get in touch
           </ButtonLink>
-          <span>Email and WhatsApp details to be confirmed.</span>
+          <span>
+            Email {contact.email} or call {contact.phones[0]}.
+          </span>
         </div>
       </div>
     </section>
