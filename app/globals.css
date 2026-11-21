@@ -3,8 +3,8 @@
    Deep purple for the closing band. One radius system (10px). */
 
 :root{
-  --paper:#F6F6FA; --surface:#FCFCFE; --ink:#14112B; --muted:#575470; --line:#DEDDEA;
-  --accent:#0200A7; --accent-hi:#0E0BC4; --accent-soft:#E9E9FA; --pink:#C723DF; --pink-soft:#F7E6FB; --pink-deep:#8400A7; --deep:#0D0624;
+  --paper:#F6F6FA; --surface:#FCFCFE; --ink:#0D0624; --muted:#575470; --line:#DEDDEA;
+  --accent:#0200A7; --accent-hi:#0E0BC4; --accent-soft:#E9E9FA; --pink:#C723DF; --pink-soft:#F7E6FB; --pink-deep:#8400A7; --deep:var(--ink);
   --r:10px; --wrap:clamp(1180px,72vw,1400px);
   --head:var(--font-poppins),system-ui,sans-serif;
   --body:var(--font-figtree),system-ui,-apple-system,'Segoe UI',sans-serif;

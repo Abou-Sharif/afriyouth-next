@@ -6,20 +6,20 @@ Only the custom properties in the first two sections are real CSS variables. Eve
 
 ## Colors (CSS variables)
 
-| Variable        | Value     | Used for                                                             |
-| --------------- | --------- | -------------------------------------------------------------------- |
-| `--paper`       | `#F6F6FA` | Page background                                                      |
-| `--surface`     | `#FCFCFE` | Alternate bands (`.band-surface`) and the dropdown                   |
-| `--ink`         | `#14112B` | Body text, headings, outline buttons                                 |
-| `--muted`       | `#575470` | Secondary text                                                       |
-| `--line`        | `#DEDDEA` | Borders and dividers                                                 |
-| `--accent`      | `#0200A7` | Duke Blue, the single brand accent: links, solid buttons, focus ring |
-| `--accent-hi`   | `#0E0BC4` | Hover state of the accent                                            |
-| `--accent-soft` | `#E9E9FA` | Pale accent fill, for example icon boxes                             |
-| `--pink`        | `#C723DF` | Steel Pink, used sparingly for highlights                            |
-| `--pink-soft`   | `#F7E6FB` | Pale pink fill                                                       |
-| `--pink-deep`   | `#8400A7` | Pink text and icons on a pale ground                                 |
-| `--deep`        | `#0D0624` | Deep purple for the `.partner` closing band                          |
+| Variable        | Value        | Used for                                                             |
+| --------------- | ------------ | -------------------------------------------------------------------- |
+| `--paper`       | `#F6F6FA`    | Page background                                                      |
+| `--surface`     | `#FCFCFE`    | Alternate bands (`.band-surface`) and the dropdown                   |
+| `--ink`         | `#0D0624`    | Body text, headings, outline buttons                                 |
+| `--muted`       | `#575470`    | Secondary text                                                       |
+| `--line`        | `#DEDDEA`    | Borders and dividers                                                 |
+| `--accent`      | `#0200A7`    | Duke Blue, the single brand accent: links, solid buttons, focus ring |
+| `--accent-hi`   | `#0E0BC4`    | Hover state of the accent                                            |
+| `--accent-soft` | `#E9E9FA`    | Pale accent fill, for example icon boxes                             |
+| `--pink`        | `#C723DF`    | Steel Pink, used sparingly for highlights                            |
+| `--pink-soft`   | `#F7E6FB`    | Pale pink fill                                                       |
+| `--pink-deep`   | `#8400A7`    | Pink text and icons on a pale ground                                 |
+| `--deep`        | `var(--ink)` | Deep purple for the `.partner` closing band                          |
 
 Hard-coded colors that are not variables yet:
 
