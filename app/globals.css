@@ -296,6 +296,7 @@ h3{font-size:1.2rem;line-height:1.3}
 .c-info li:last-child{border-bottom:1px solid var(--line)}
 .c-info b{display:block;font-family:var(--head);font-weight:600}
 .c-info span{color:var(--muted)}
+@media (max-width:640px){.c-info li{box-sizing:border-box;min-height:116px}}
 .inline-form{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px;max-width:520px;align-items:flex-start}
 .inline-form .field{flex:1 1 240px;margin:0}
 .inline-form .btn{width:auto;flex:none}
@@ -310,6 +311,14 @@ h3{font-size:1.2rem;line-height:1.3}
 .footer nav a:hover{text-decoration:underline;text-underline-offset:3px}
 .footer :focus-visible{outline-color:#fff}
 .legal{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px;padding-block:20px 32px;border-top:1px solid rgba(255,255,255,.25);font-size:.92rem}
+/* gaps as drawn in the design: links sit 8px apart on desktop (long titles wrap), the brand block is taller on phones */
+@media (min-width:901px){
+  .footer h3{line-height:1.3}
+  .footer nav a{margin-bottom:8px;padding-right:8px}
+  .footer nav a:last-child{margin-bottom:0}
+  .legal{padding-block:9px 21px;line-height:23px}
+}
+@media (max-width:640px){.foot-brand{padding-bottom:28px}.legal{padding-bottom:64px}}
 .totop{position:fixed;right:20px;bottom:20px;width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--accent);display:grid;place-items:center;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s,transform .2s;z-index:40}
 .totop.show{opacity:1;pointer-events:auto;transform:none}
 .totop .ic{transform:rotate(-90deg)}
@@ -371,6 +380,7 @@ h3{font-size:1.2rem;line-height:1.3}
   .grid3{grid-template-columns:1fr}
   .tl-btn{padding:14px 0 0;text-align:center}
   .tl-btn .ic{margin:0 auto 4px}
+  .tl-pp{box-sizing:border-box;min-height:24px;padding-block:0;line-height:1.2}
   .tl-btn b,.tl-btn .n{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .tl-panel{margin-top:16px;padding:20px;gap:16px}
   .tl-panel h3{font-size:1.25rem;margin-bottom:6px}
@@ -532,6 +542,8 @@ a.j-row:hover .j-rt{color:var(--accent)}
 .j-cta-l span{display:block;margin-top:6px}
 .j-cta-l a:hover b{text-decoration:underline;text-underline-offset:4px}
 .j-cta-b{display:flex;flex-wrap:wrap;align-items:center;gap:16px 32px}
+/* the design frame for this block is 26px shorter than its text on phones */
+@media (max-width:640px){.j-cta-b{margin-bottom:-26px}}
 .j-cta :focus-visible{outline-color:#fff}
 
 @media (max-width:1020px){
