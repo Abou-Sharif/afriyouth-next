@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { contact, footerColumns } from "@/content/site";
+import { ContactLinks } from "@/components/contact-links";
+import { footerColumns } from "@/content/site";
 
 export function Footer() {
   return (
@@ -14,9 +15,9 @@ export function Footer() {
             height={112}
           />
           <p>
-            {contact.email}
+            <ContactLinks kind="email" />
             <br />
-            {contact.phones.join(" or ")}
+            <ContactLinks kind="phone" />
           </p>
         </div>
         {footerColumns.map((col) => (

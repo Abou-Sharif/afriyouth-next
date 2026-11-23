@@ -1,9 +1,11 @@
+import type { ContactKind } from "@/components/contact-links";
 import type { FieldConfig } from "@/components/field";
-import { contact } from "./site";
 
-export const contactInfo = [
-  { icon: "mail", title: "Email", text: contact.email },
-  { icon: "phone", title: "Phone", text: contact.phones.join(" or ") },
+type ContactInfo = { icon: string; title: string; kind?: ContactKind; text?: string };
+
+export const contactInfo: ContactInfo[] = [
+  { icon: "mail", title: "Email", kind: "email" },
+  { icon: "phone", title: "Phone", kind: "phone" },
   { icon: "clock", title: "Reply time", text: "We aim to reply within a few working days." },
 ];
 

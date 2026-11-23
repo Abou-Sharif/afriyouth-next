@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { ContactLinks } from "@/components/contact-links";
 import { ContactForm } from "@/components/contact-form";
 import { IconBox } from "@/components/icon";
 import { PageHero } from "@/components/page-hero";
@@ -29,7 +30,7 @@ export default function ContactPage() {
                   <IconBox name={c.icon} />
                   <span>
                     <b>{c.title}</b>
-                    <span>{c.text}</span>
+                    <span>{c.kind ? <ContactLinks kind={c.kind} /> : c.text}</span>
                   </span>
                 </li>
               ))}

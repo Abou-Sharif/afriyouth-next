@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ButtonLink } from "@/components/button-link";
+import { EmailLink, PhoneLinks } from "@/components/contact-links";
 import { nextSteps } from "@/content/home";
-import { contact } from "@/content/site";
 
 export function NextSteps() {
   return (
@@ -23,7 +23,7 @@ export function NextSteps() {
             Get in touch
           </ButtonLink>
           <span>
-            Email {contact.email} or call {contact.phones[0]}.
+            Email <EmailLink /> or call <PhoneLinks first />.
           </span>
         </div>
       </div>
