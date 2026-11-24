@@ -1,0 +1,4 @@
+Contact: mailto:competence@jobra.africa
+Expires: 2027-11-24T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://afriyouth-next.vercel.app/.well-known/security.txt
