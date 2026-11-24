@@ -18,12 +18,14 @@ import {
   teamGets,
   workRoutes,
 } from "@/content/opportunities";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Opportunities",
   description:
     "Challenges, program intakes, partnerships and ways to work with us. Get updates when something opens.",
-};
+  path: "/opportunities/",
+});
 
 const stageTabs = challengeStages.map((s, i) => ({
   id: String(i),

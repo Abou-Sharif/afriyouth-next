@@ -5,11 +5,13 @@ import { ContactForm } from "@/components/contact-form";
 import { IconBox } from "@/components/icon";
 import { PageHero } from "@/components/page-hero";
 import { contactInfo } from "@/content/contact";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Contact",
   description: "Get in touch or partner with AfriYouth Innovation Labs.",
-};
+  path: "/contact/",
+});
 
 export default function ContactPage() {
   return (

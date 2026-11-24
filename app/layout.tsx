@@ -4,7 +4,9 @@ import { BackToTop } from "@/components/back-to-top";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
 import { IconSprite } from "@/components/icon";
+import { OrganizationSchema } from "@/components/organization-schema";
 import { ScrollReveal } from "@/components/reveal";
+import { siteDescription, siteName, siteUrl, socialDefaults } from "@/lib/seo";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -22,18 +24,22 @@ const figtree = Figtree({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: {
-    default: "AfriYouth Innovation Labs",
-    template: "%s | AfriYouth Innovation Labs",
+    default: siteName,
+    template: `%s | ${siteName}`,
   },
+  description: siteDescription,
   icons: { icon: "/logo/favicon.svg" },
-  description: "Evidence, innovation and entrepreneurship programs for young people across Africa.",
+  alternates: { canonical: "/" },
+  ...socialDefaults,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${poppins.variable} ${figtree.variable}`}>
       <body>
+        <OrganizationSchema />
         <IconSprite />
         <a className="skip" href="#main">
           Skip to content

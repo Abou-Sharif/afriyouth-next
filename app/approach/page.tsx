@@ -5,11 +5,13 @@ import { CtaBand } from "@/components/cta-band";
 import { PageHero } from "@/components/page-hero";
 import { roadPhases } from "@/content/approach";
 import { labs } from "@/content/labs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Our approach",
   description: "The ten step journey from evidence to impact, and how the labs fit in.",
-};
+  path: "/approach/",
+});
 
 const labNames = Object.fromEntries(labs.map((l) => [l.id, l.name]));
 const pad = (n: number) => String(n).padStart(2, "0");

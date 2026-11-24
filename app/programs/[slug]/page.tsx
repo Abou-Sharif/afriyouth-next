@@ -10,6 +10,7 @@ import { RelatedLinks } from "@/components/related-links";
 import { SectionHead } from "@/components/section-head";
 import { TickList } from "@/components/tick-list";
 import { getProgram, programs, seriesInfo } from "@/content/programs";
+import { pageMetadata } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -28,7 +29,13 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const program = getProgram((await params).slug);
-  return program ? { title: program.name, description: program.lead } : {};
+  return program
+    ? pageMetadata({
+        title: program.name,
+        description: program.lead,
+        path: `/programs/${program.slug}/`,
+      })
+    : {};
 }
 
 export default async function ProgramPage({ params }: Props) {

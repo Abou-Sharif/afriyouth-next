@@ -6,11 +6,13 @@ import { PageHero } from "@/components/page-hero";
 import { RelatedLinks } from "@/components/related-links";
 import { SectionHead } from "@/components/section-head";
 import { labs, type Lab } from "@/content/labs";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Services",
   description: "Five labs plus impact and funding support that turn evidence into action.",
-};
+  path: "/services/",
+});
 
 const totalSteps = 10;
 

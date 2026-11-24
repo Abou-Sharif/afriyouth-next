@@ -7,11 +7,13 @@ import { ProgramsBrowser } from "@/components/programs-browser";
 import { SectionHead } from "@/components/section-head";
 import { programs } from "@/content/programs";
 import { joiningSteps, simulationSteps } from "@/content/programs-page";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Programs",
   description: "Five programs for graduates, students, professionals and teams.",
-};
+  path: "/programs/",
+});
 
 export default function ProgramsPage() {
   return (

@@ -6,11 +6,13 @@ import { PageHero } from "@/components/page-hero";
 import { RelatedLinks } from "@/components/related-links";
 import { SectionHead } from "@/components/section-head";
 import { mission, values, vision } from "@/content/about";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "About",
   description: "Who we are, what we believe and where we are going.",
-};
+  path: "/about/",
+});
 
 export default function AboutPage() {
   return (
